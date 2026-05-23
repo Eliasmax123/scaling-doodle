@@ -1,0 +1,38 @@
+//+------------------------------------------------------------------+
+//|                                                 SimpleMA_EA.mq5  |
+//|                                  Copyright 2026, AI Developer    |
+//+------------------------------------------------------------------+
+#property property_strict
+
+//--- Input parameters
+input int FastMAPeriod = 10;  // Fast Moving Average Period
+input int SlowMAPeriod = 20;  // Slow Moving Average Period
+input double Lots = 0.1;       // Trading Lot Size
+
+//+------------------------------------------------------------------+
+//| Expert initialization function                                   |
+//+------------------------------------------------------------------+
+int OnInit()
+  {
+   // Initialization code goes here
+   Print("EA Started successfully.");
+   return(INIT_SUCCEEDED);
+  }
+
+//+------------------------------------------------------------------+
+//| Expert deinitialization function                                 |
+//+------------------------------------------------------------------+
+void OnDeinit(const int reason)
+  {
+   Print("EA Stopped.");
+  }
+
+//+------------------------------------------------------------------+
+//| Expert tick function                                             |
+//+------------------------------------------------------------------+
+void OnTick()
+  {
+   // This code runs on every single price tick
+   // Insert your entry and exit logic calculations here
+  }
+  
